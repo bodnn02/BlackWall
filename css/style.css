@@ -315,16 +315,31 @@ p {
 }
 .areas-wrapper{
   display: block;
-  width: 90%;
+  width: 1280px;
   margin: 0 auto;
+}
+.areas-first-link{
+  z-index: 2;
+  position: absolute;
+  top: 45px;
+  left: 210px;
 }
 .areas-middle-link {
   display: block;
   margin: 0 auto;
 }
 .areas-line {
+  position: relative;
   display: flex;
   justify-content: center;
+}
+.areas-first-item {
+  width: 360px;
+  height: 200px;
+  background: transparent;
+  border: none;
+  backdrop-filter: none;
+  margin-right: auto;
 }
 .areas-item {
   width: 360px;
@@ -334,10 +349,10 @@ p {
   backdrop-filter: blur(15px);
   /* Note: backdrop-filter has minimal browser support */
 }
-.areas-first-item {
-  background: transparent;
-  border: none;
-  backdrop-filter: none;
+.areas-item:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+  transition: .2s;
 }
 .areas-first-item .areas-h2 span {
   margin-left: 16px;
@@ -389,4 +404,8 @@ p {
   color: #000000;
   font-stretch: 110;
   margin-top: 28px;
+}
+.areas-item:hover .areas-h2,.areas-p{
+  color: var(--color-white);
+  transition: .2s;
 }
