@@ -1,0 +1,281 @@
+* {
+  font-family: "Archivo";
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+.header {
+  height: 810px;
+  background: url(../img/header-background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 38px;
+}
+.header__wrapper {
+  display: flex;
+  margin: 0 44px;
+  justify-content: space-between;
+}
+.logo {
+}
+.header__menu-btn {
+  margin-top: 3px;
+  margin-right: 1px;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  gap: 4px;
+}
+.header__menu-btn span {
+  width: 30px;
+  border: 2px solid var(--color-black);
+}
+.contact-btn {
+  margin-top: 155px;
+  margin-left: 84%;
+  background: transparent;
+  border: none;
+}
+.text-h1 {
+  margin-top: 5px;
+  margin-left: 77px;
+  font-weight: 900;
+  font-size: 128px;
+  text-transform: uppercase;
+  color: var(--color-black);
+  letter-spacing: 5px;
+}
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.header-description {
+  display: inline-block;
+  transition: left 0.2s linear;
+  padding: 8px 0;
+  width: 57%;
+  height: 25px;
+  background: var(--color-black);
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+.header-description .text-p {
+  color: var(--color-white);
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 87.8%;
+  /* identical to box height, or 18px */
+
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.text-p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  /* or 20px */
+
+  color: #ffffff;
+}
+.header-p {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 17px;
+}
+.header__portfolio-block {
+  margin-right: 22px;
+  width: 257px;
+  height: 186px;
+  background: var(--color-black);
+}
+.header__portfolio-link {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 77px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-decoration: none;
+  color: var(--color-white);
+}
+.mission {
+  top: -65px;
+  margin-left: 44px;
+  position: relative;
+  background: var(--color-black);
+  padding-top: 99px;
+}
+.mission-header {
+  margin-left: 52px;
+}
+.mission-header .mission-h2 {
+  margin-bottom: 28px;
+}
+.mission-header .mission-p {
+  width: 52%;
+}
+.mission-line {
+  width: 70%;
+  position: absolute;
+  left: 30%;
+  top: 50px;
+}
+.mission-principles {
+  margin-top: 98px;
+  margin-left: 50px;
+  background: url(../img/sphere.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  padding-bottom: 100px;
+}
+.mission-h2 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 87.8%;
+  /* identical to box height, or 28px */
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+  font-stretch: 125;
+
+  opacity: 0.5;
+}
+.mission-h2 img {
+  margin-right: 12px;
+}
+.mission-p {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 87.8%;
+  /* or 35px */
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+  font-stretch: 125;
+}
+.mission-ul {
+  width: 414px;
+  margin-top: 29px;
+  list-style: none;
+}
+.mission-li {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  /* or 16px */
+
+  color: #ffffff;
+  font-stretch: 125;
+  border-left: 3px solid #ffffff;
+  padding-left: 19px;
+  margin-bottom: 28px;
+}
+.mission-numbers {
+}
+.mission-quote {
+  position: absolute;
+  top: 900px;
+  left: -90px;
+  background: var(--color-white);
+  width: 38vw;
+  height: 461px;
+  background: url(../img/quote.png);
+  background-repeat: no-repeat;
+}
+.mission-quote-wrapper {
+  margin-top: 0.41%;
+  margin-left: 23%;
+}
+.quote-mark {
+  margin-left: 17px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 87.8%;
+  /* or 84px */
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+  font-stretch: 125;
+
+  text-shadow:  1px 0 #000, 
+  0 1px #000, 
+  -1px 0 #000, 
+  0 -1px #000;
+}
+.quote-mark:nth-child(2n){
+  transform: rotate(-180deg);
+}
+.text-p {
+}
+.quote-p {
+  width: 340px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  /* or 20px */
+
+  color: #000000;
+  font-stretch: 125;
+}
+.quote-signature img{
+  display: inline-block;
+}
+.quote-signature span{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+.signature-initials {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  /* identical to box height, or 20px */
+
+  color: #000000;
+  font-stretch: 125;
+}
+.signature-post {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  /* identical to box height, or 20px */
+
+  color: #000000;
+  font-stretch: 110;
+
+  opacity: 0.5;
+}
+.text-h2 {
+}
+.mission-h2 {
+}
+.mission-numbers__grid {
+}
+.mission-numbers__grid-item {
+}
+.mission-number {
+}
+.numbers-p {
+}
