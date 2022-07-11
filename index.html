@@ -15,29 +15,49 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__wrapper">
-            <img class="logo" src="img/logo.svg" alt="Black Wall">
-            <button class="header__menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <div class="header__menu">
+        <div class="header__menu_wrapper">
+            <button class="header__menu_close"><img src="/img/header/close.svg" alt=""></button>
+            <img class="header__menu_logo" src="/img/header/menu-logo.svg"></img>
+            <img class="header__menu_img" src="/img/header/menu-img.svg"></img>
+            <nav class="header__menu_nav">
+                <li class="header__menu_nav-item" onclick="ScrollToHome()">Home</li>
+                <li class="header__menu_nav-item" onclick="ScrollToAbout()">About</li>
+                <li class="header__menu_nav-item" onclick="ScrollToAreas()">Areas</a>
+                <li class="header__menu_nav-item" onclick="ScrollToSolutions()">Solutions</li>
+                <li class="header__menu_nav-item" onclick="ScrollToContact()">Contact us</li>
+                <li class="header__menu_nav-item" onclick="ScrollToCareers()">Careers</li>
+            </nav>
+            <a class="header__menu_email" href="mailto:hello@blackwall.tech">hello@blackwall.tech</a>
         </div>
-        <button class="contact-btn">
-            <img src="img/Contact us.png" alt="">
-        </button>
-        <h1 class="text-h1">Black wall</h1>
-        <div class="header__bottom">
-            <div class="header-description">
-                <p class="text-p">PROTOCOL RESEARCH • BLOCKCHAIN DEV • WEB3 APPS</p>
+    </div>
+    <header class="header" id="particles-js">
+        <div class="header__blur-left"></div>
+        <div class="header__blur-right"></div>
+        <div class="header-container">
+            <div class="header__wrapper">
+                <img class="logo" src="img/logo.svg" alt="Black Wall">
+                <button class="header__menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <div class="header__portfolio-block">
-                <p class="text-p header-p">Build decentralized future by breaking down barriers</p>
-                <a class="header__portfolio-link" href="">
-                    <span>See portfolio</span>
-                    <img src="img/Arrow.svg" alt="">
-                </a>
+            <button class="contact-btn" onclick="ScrollToContact()">
+                <img src="img/header/Contact us.png" alt="">
+            </button>
+            <h1 class="text-h1">Black wall</h1>
+            <div class="header__bottom">
+                <div class="header-description">
+                    <p class="text-p">PROTOCOL RESEARCH • BLOCKCHAIN DEV • WEB3 APPS</p>
+                </div>
+                <div class="header__portfolio-block">
+                    <p class="text-p header-p">Build decentralized future by breaking down barriers</p>
+                    <a class="header__portfolio-link" onclick="ScrollToSolutions()">
+                        <span>See portfolio</span>
+                        <img src="img/header/Arrow.svg" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -46,7 +66,7 @@
             <h2 class="text-h2 mission-h2"><img src="img/Union.svg" alt=""><span>Our Mission</span></h2>
             <p class="text-p mission-p">Provide the best user experience for working with web3 technologies in everyday
                 life.</p>
-            <img class="mission-line" src="img/mission-line.svg"></img>
+            <img class="mission-line" src="img/mission/mission-line.svg"></img>
         </div>
         <div class="mission-principles">
             <h2 class="text-h2 mission-h2"><img src="img/Union.svg" alt=""><span>Principles</span></h2>
@@ -70,7 +90,7 @@
                         wider range of people.</p>
                     <div class="quote-mark">“</div>
                     <div class="quote-signature">
-                        <img src="img/Quote.svg" alt="">
+                        <img src="img/mission/Quote.svg" alt="">
                         <span>
                             <div class="signature-initials">K.V. </div>
                             <div class="signature-post">CEO</div>
@@ -106,11 +126,11 @@
             <div class="areas-line">
                 <div class="areas-first-item">
                     <div class="areas-item-wrapper">
-                        <h2 class="text-h2 areas-h2"><img src="img/areas-union.svg" alt=""><span>AREAS</span></h2>
+                        <h2 class="text-h2 areas-h2"><img src="img/Union-black.svg" alt=""><span>AREAS</span></h2>
                         <p class="text-p areas-p">…where our knowledge and experience turn into superpowers</p>
                     </div>
                 </div>
-                <img class="areas-first-link" src="img/float-link.svg" alt="">
+                <img class="areas-first-link" src="img/areas/float-link.svg" alt="">
                 <div class="areas-item">
                     <div class="areas-item-wrapper">
                         <h2 class="text-h2 areas-h2">Protocol research</h2>
@@ -118,7 +138,7 @@
                             smart contracts.</p>
                     </div>
                 </div>
-                <img src="img/horizontal-link.svg" alt="">
+                <img src="img/areas/horizontal-link.svg" alt="">
                 <div class="areas-item">
                     <div class="areas-item-wrapper">
                         <h2 class="text-h2 areas-h2">Blockchain development</h2>
@@ -128,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <img class="areas-middle-link" src="img/middle-link.svg" alt="">
+            <img class="areas-middle-link" src="img/areas/middle-link.svg" alt="">
             <div class="areas-line">
                 <div class="areas-item">
                     <div class="areas-item-wrapper">
@@ -138,7 +158,7 @@
                             mobile platforms.</p>
                     </div>
                 </div>
-                <img src="img/horizontal-link.svg" alt="">
+                <img src="img/areas/horizontal-link.svg" alt="">
                 <div class="areas-item">
                     <div class="areas-item-wrapper">
                         <h2 class="text-h2 areas-h2">Smart-contracts</h2>
@@ -146,7 +166,7 @@
                             modernization of economic relations.</p>
                     </div>
                 </div>
-                <img src="img/horizontal-link.svg" alt="">
+                <img src="img/areas/horizontal-link.svg" alt="">
                 <div class="areas-item">
                     <div class="areas-item-wrapper">
                         <h2 class="text-h2 areas-h2">Infrastructure</h2>
@@ -158,63 +178,216 @@
     </section>
     <section class="chain-support">
         <div class="chain-support-wrapper">
-            <h2 class="text-h2 chain-h2"><img src="img/areas-union.svg" alt=""><span>Multi-chain Support</span></h2>
+            <h2 class="text-h2"><img src="img/Union-black.svg" alt=""><span>Multi-chain Support</span></h2>
             <div class="chain-first-line">
-                <img class="chain-line-item" src="img/chain1.svg"></img>
-                <img class="chain-line-item" src="img/chain2.svg"></img>
-                <img class="chain-line-item" src="img/chain3.svg"></img>
-                <img class="chain-line-item" src="img/chain4.svg"></img>
-                <img class="chain-line-item" src="img/chain5.svg"></img>
-                <img class="chain-line-item" src="img/chain6.svg"></img>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain1.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Ethereum</h2>
+                        <a class="chain-a" href="https://ethereum.org/">https://ethereum.org/</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain2.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">BNB Smart Chain</h2>
+                        <a class="chain-a"
+                            href="https://www.bnbchain.org/en/smartChain">https://www.bnbchain.org/en/smartChain</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain3.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">EOS</h2>
+                        <a class="chain-a" href="https://eos.io/">https://eos.io/</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain4.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Solana</h2>
+                        <a class="chain-a" href="https://solana.com/">https://solana.com/</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain5.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Tron</h2>
+                        <a class="chain-a" href="https://tron.network/">https://tron.network/</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain6.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Tezos</h2>
+                        <a class="chain-a" href="https://tezos.com/">https://tezos.com/</a>
+                    </div>
+                </div>
             </div>
             <div class="chain-second-line">
-                <img class="chain-line-item" src="img/chain7.svg"></img>
-                <img class="chain-line-item" src="img/chain8.svg"></img>
-                <img class="chain-line-item" src="img/chain9.svg"></img>
-                <img class="chain-line-item" src="img/chain10.svg"></img>
-                <img class="chain-line-item" src="img/chain11.svg"></img>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain7.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Flow/h2>
+                            <a class="chain-a" href="https://www.onflow.org/">https://www.onflow.org/</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain8.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Cosmos</h2>
+                        <a class="chain-a" href="https://cosmos.network/">https://cosmos.network/</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain9.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Near</h2>
+                        <a class="chain-a" href="https://near.org/">https://near.org/</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain10.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Polkadot</h2>
+                        <a class="chain-a" href="https://polkadot.network/">https://polkadot.network/</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain11.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Algorand</h2>
+                        <a class="chain-a" href="https://www.algorand.com/">https://www.algorand.com/</a>
+                    </div>
+                </div>
             </div>
             <div class="chain-third-line">
-                <img class="chain-line-item" src="img/chain11.svg"></img>
-                <img class="chain-line-item" src="img/chain12.svg"></img>
-                <img class="chain-line-item" src="img/chain13.svg"></img>
-                <img class="chain-line-item" src="img/chain14.svg"></img>
-                <img class="chain-line-item" src="img/chain15.svg"></img>
-                <img class="chain-line-item" src="img/chain16.svg"></img>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain12.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Stellar</h2>
+                        <a class="chain-a" href="https://www.stellar.org/">https://www.stellar.org/</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain13.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Cardano</h2>
+                        <a class="chain-a" href="https://cardano.org/">https://cardano.org/</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain14.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Ripple</h2>
+                        <a class="chain-a" href="https://ripple.com/">https://ripple.com/</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain15.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Dash</h2>
+                        <a class="chain-a" href="https://www.dash.org/">https://www.dash.org/</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain16.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Monero</h2>
+                        <a class="chain-a" href="https://www.getmonero.org/">https://www.getmonero.org/</a>
+                    </div>
+                </div>
+                <div class="chain-line-item">
+                    <img src="img/chain-support/chain17.svg"></img>
+                    <div class="chain-description">
+                        <h2 class="chain-h2">Litecoin</h2>
+                        <a class="chain-a" href="ttps://litecoin.org/">https://litecoin.org/</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="solutions">
-        <div class="solutions-wrapper">
-            <img class="solutions-preview" src="img/solution-1.png"></img>
-            <div class="solutions-description">
-                <h2 class="text-h2 solutions-heading"><img src="img/Union.svg" alt=""><span>Our solutions</span></h2>
-                <nav class="solutions-menu">
-                    <li class="solutions-menu-item solutions-menu-item-active"></li>
-                    <li class="solutions-menu-item"></li>
-                    <li class="solutions-menu-item"></li>
-                </nav>
-                <h2 class="text-h2 solution-h2"><img src="img/solution-1-logo.svg" alt=""> <span>Black Bridge</span>
-                </h2>
-                <p class="text-p solution-p">Cross-chain bridge for the instant transfer of data and digital assets
-                    across Ethereum, Polkadot and Near networks.</p>
-                <ul class="solution-ul">
-                    <li class="solution-li">Ultra-fast cross-chain transfers
-                    </li>
-                    <li class="solution-li">EVM, no-EVM and Layer-2 networks
-                    </li>
-                    <li class="solution-li">Fungible Tokens and NFTs support
-                    </li>
-                    <li class="solution-li">Custom tokens minting</li>
-                </ul>
-                <div class="solution-note">*in development</div>
+        <div class="solutions__heading">
+            <h2 class="text-h2 solutions-h2"><img src="img/Union.svg" alt=""><span>Our solutions</span></h2>
+            <nav class="solutions__menu">
+                <li class="solutions__menu_item solutions__menu_item-active" onclick="currentSlide(1)"></li>
+                <li class="solutions__menu_item" onclick="currentSlide(2)"></li>
+                <li class="solutions__menu_item" onclick="currentSlide(3)"></li>
+            </nav>
+        </div>
+        <div class="solutions__list">
+            <div class="solutions__list_item">
+                <div class="solutions__item_preview">
+                    <img src="img/solutions/solution-1.png"></img>
+                </div>
+                <div class="solutions__item_description">
+                    <h2 class="text-h2 solution-h2"><img src="img/solutions/solution-1-logo.svg" alt=""> <span>Black
+                            Bridge</span>
+                    </h2>
+                    <p class="text-p solution-p">Cross-chain bridge for the instant transfer of data and digital
+                        assets
+                        across Ethereum, Polkadot and Near networks.</p>
+                    <ul class="solution-ul">
+                        <li class="solution-li">Ultra-fast cross-chain transfers
+                        </li>
+                        <li class="solution-li">EVM, no-EVM and Layer-2 networks
+                        </li>
+                        <li class="solution-li">Fungible Tokens and NFTs support
+                        </li>
+                        <li class="solution-li">Custom tokens minting</li>
+                    </ul>
+                    <div class="solution-note">*in development</div>
+                </div>
+            </div>
+            <div class="solutions__list_item deactivated">
+                <div class="solutions__item_preview">
+                    <img src="img/solutions/solution-2.png"></img>
+                </div>
+                <div class="solutions__item_description">
+                    <h2 class="text-h2 solution-h2"><img src="img/solutions/solution-2-logo.svg" alt=""> <span>Black
+                            Wallet</span>
+                    </h2>
+                    <p class="text-p solution-p">Wallet with support for major cryptocurrencies and portfolio tracking
+                        out of the box.</p>
+                    <ul class="solution-ul">
+                        <li class="solution-li">100+ cryptocurrencies in 25 blockchains
+                        </li>
+                        <li class="solution-li">Portfolio tracker with market data stream
+                        </li>
+                        <li class="solution-li">Advanced security and local key storage
+                        </li>
+                        <li class="solution-li">Built-in exchange
+                        </li>
+                    </ul>
+                    <div class="solution-note">*in development</div>
+                </div>
+            </div>
+            <div class="solutions__list_item deactivated">
+                <div class="solutions__item_preview">
+                    <img src="img/solutions/solution-3.png"></img>
+                </div>
+                <div class="solutions__item_description">
+                    <h2 class="text-h2 solution-h2"><img src="img/solutions/solution-3-logo.svg" alt=""> <span>smart contract pack</span>
+                    </h2>
+                    <p class="text-p solution-p">Our author's package of smart contract templates for Ethereum-like (Solidity) networks with best practices.</p>
+                    <ul class="solution-ul">
+                        <li class="solution-li">Implemented standards and code snippets
+                        </li>
+                        <li class="solution-li">Reusable, robust Solidity components
+                        </li>
+                        <li class="solution-li">Ready for audit and high-load scaling
+                        </li>
+                    </ul>
+                    <div class="solution-note">*in development</div>
+                </div>
             </div>
         </div>
     </section>
     <section class="contact">
         <div class="contact-wrapper">
             <form action="" class="contact-form">
-                <h2 class="text-h2 contact-h2"><img src="img/areas-union.svg" alt=""><span>contact us</span></h2>
+                <h2 class="text-h2"><img src="img/Union-black.svg" alt=""><span>contact us</span></h2>
                 <h3 class="text-h3 contact-h3">Name</h3>
                 <input class="contact-input-small" type="text" placeholder="Your name">
                 <h3 class="text-h3 contact-h3">E-mail</h3>
@@ -238,7 +411,7 @@
     </section>
     <section class="vacations">
         <div class="vacations-header">
-            <h2 class="text-h2 vacations-h2"><img src="img/areas-union.svg" alt=""><span>we are hiring</span></h2>
+            <h2 class="text-h2 vacations-h2"><img src="img/Union-black.svg" alt=""><span>we are hiring</span></h2>
             <div class="vacations-header__arrows"></div>
         </div>
         <div class="vacations-flex">
@@ -253,7 +426,7 @@
                     </ul>
                     <button class="vacation-apply-btn">
                         <span>Apply now</span>
-                        <img class="vacation-apply-btn-arrow" src="img/vacation-arrow.svg"></img>
+                        <img class="vacation-apply-btn-arrow" src="img/vacations/vacation-arrow.svg"></img>
                     </button>
                 </div>
             </div>
@@ -268,7 +441,7 @@
                     </ul>
                     <button class="vacation-apply-btn">
                         <span>Apply now</span>
-                        <img class="vacation-apply-btn-arrow" src="img/vacation-arrow.svg"></img>
+                        <img class="vacation-apply-btn-arrow" src="img/vacations/vacation-arrow.svg"></img>
                     </button>
                 </div>
             </div>
@@ -282,30 +455,30 @@
                     </ul>
                     <button class="vacation-apply-btn">
                         <span>Apply now</span>
-                        <img class="vacation-apply-btn-arrow" src="img/vacation-arrow.svg"></img>
+                        <img class="vacation-apply-btn-arrow" src="img/vacations/vacation-arrow.svg"></img>
                     </button>
                 </div>
             </div>
         </div>
         <p class="vacation-p">We are always on the lookout for talented employees. Not enough experience or no vacancy
             here for you? That's okay, just send us your CV</p>
-        <img class="vacation-arrow" src="img/vacation-email-arrow.svg"></img>
+        <img class="vacation-arrow" src="img/vacations/vacation-email-arrow.svg"></img>
         <a class="vacation-email" href="mailto::hr@blackwall.tech"><span>hr@blackwall.tech</span></a>
     </section>
     <footer class="footer">
         <div class="footer-wrapper">
-            <img class="footer-logo" src="img/footer-logo.svg" alt="">
+            <img class="footer-logo" src="img/footer/footer-logo.svg" alt="">
             <nav class="footer-links">
-                <a class="footer-link">Home</a>
-                <a class="footer-link">About</a>
-                <a class="footer-link">Areas</a>
-                <a class="footer-link">Solutions</a>
-                <a class="footer-link">Contact us</a>
-                <a class="footer-link">Careers</a>
+                <a class="footer-link" onclick="ScrollToHome()">Home</a>
+                <a class="footer-link" onclick="ScrollToAbout()">About</a>
+                <a class="footer-link" onclick="ScrollToAreas()">Areas</a>
+                <a class="footer-link" onclick="ScrollToSolutions()">Solutions</a>
+                <a class="footer-link" onclick="ScrollToContact()">Contact us</a>
+                <a class="footer-link" onclick="ScrollToCareers()">Careers</a>
             </nav>
             <a class="footer-email" href="">
                 Hello@blackwall.tech</a>
-            <img class="footer-img" src="img/footer-img.svg" alt="">
+            <img class="footer-img" src="img/footer/footer-img.svg" alt="">
         </div>
         <div class="footer-copyright">
             <div class="footer-copyright-arrows"></div>
@@ -315,5 +488,9 @@
         </div>
     </footer>
 </body>
+<script src="js/jquery.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/main.js"></script>
 
 </html>
