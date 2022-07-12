@@ -15,6 +15,7 @@ body {
   --color-white: #ffffff;
   --color-black: #000000;
 }
+/*Text Styles Start*/
 .text-h1 {
   margin-top: 5px;
   margin-left: 77px;
@@ -43,7 +44,9 @@ body {
 
   color: #ffffff;
 }
+/*Text Styles STOP*/
 
+/*Header Start*/
 .header {
   position: relative;
   height: 810px;
@@ -112,7 +115,7 @@ body {
 }
 .header__menu {
   display: none;
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   right: 0;
   z-index: 5;
@@ -121,15 +124,6 @@ body {
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
   animation: right-init 0.5s;
-}
-@keyframes right-close {
-  from {
-    right: 0;
-  }
-
-  to {
-    right: -100%;
-  }
 }
 .header__menu_wrapper {
   backdrop-filter: blur(10px);
@@ -202,14 +196,6 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .contact-btn img:hover {
   cursor: pointer;
 }
@@ -250,24 +236,6 @@ body {
   height: 186px;
   background: var(--color-black);
 }
-@keyframes left-init {
-  from {
-    left: -100%;
-  }
-
-  to {
-    left: 0;
-  }
-}
-@keyframes right-init {
-  from {
-    right: -100%;
-  }
-
-  to {
-    right: 0;
-  }
-}
 .header__portfolio-link {
   display: flex;
   align-items: center;
@@ -288,6 +256,9 @@ body {
   color: lightgray;
   transition: width 0.4s ease-in-out;
 }
+/*Header STOP*/
+
+/*Mission START*/
 .mission {
   top: -65px;
   margin-left: 44px;
@@ -318,17 +289,6 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   padding-bottom: 100px;
-}
-@keyframes sphere {
-  0% {
-    background: url(../img/mission/sphere-1.png) 100% 0 no-repeat;
-  }
-  50% {
-    background: url(../img/mission/sphere-2.png) 100% 0 no-repeat;
-  }
-  100% {
-    background: url(../img/mission/sphere-3.png) 100% 0 no-repeat;
-  }
 }
 .mission-h2 span {
   color: #ffffff;
@@ -363,7 +323,7 @@ body {
   margin-bottom: 28px;
 }
 .mission-glitch {
-  width: 962px;
+  width: 75%;
   height: 60px;
   background: url(../img/mission/Glitch.png);
   margin-left: auto;
@@ -480,11 +440,13 @@ body {
   color: #ffffff;
   font-stretch: 125;
 }
+/*Mission STOP*/
+
+/*AREAS START*/
 .areas {
+  margin-top: -200px;
   z-index: -1;
   width: 100%;
-  position: absolute;
-  top: 2168px;
   padding-top: 276px;
   background: url(../img/areas/areas-background.png);
   background-repeat: no-repeat;
@@ -560,6 +522,10 @@ body {
   margin-left: 31px;
 }
 .areas-h2 {
+  display: flex;
+  align-items: center;
+}
+.areas-h2 {
   font-weight: 600;
   font-size: 20px;
   line-height: 87.8%;
@@ -588,8 +554,11 @@ body {
   font-stretch: 110;
   margin-top: 28px;
 }
+/*AREAS STOP*/
+
+/*Chain START*/
 .chain-support {
-  margin-top: 620px;
+  margin-top: 50px;
 }
 .chain-support-wrapper {
   margin: 0 auto;
@@ -605,7 +574,6 @@ body {
   position: relative;
   justify-content: space-between;
   align-items: center;
-  height: 128px;
   background: var(--color-black);
   border-radius: 64px;
 }
@@ -652,6 +620,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+/*Chain STOP*/
+
+/*Solutions START*/
 .solutions {
   position: relative;
   margin-top: 185px;
@@ -715,14 +686,6 @@ body {
 .deactivated {
   display: none;
 }
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .solution-h2 {
   width: 60%;
   display: flex;
@@ -777,6 +740,9 @@ body {
 
   opacity: 0.5;
 }
+/*Solutions STOP*/
+
+/*Contact START*/
 .contact {
 }
 .contact-wrapper {
@@ -822,13 +788,14 @@ body {
 }
 .contact-input-big {
   margin-top: 11px;
+  resize: none;
   user-select: none;
-  text-align: start;
   width: 504px;
   height: 203px;
   background: #ffffff;
   border: 2px solid #000000;
   word-wrap: break-word;
+  text-align: left;
 }
 .contact-input-checkbox {
   display: block;
@@ -847,7 +814,7 @@ body {
   content: "";
   display: inline-block;
   width: 30px;
-  height: 30px;
+  height: 29px;
   flex-shrink: 0;
   flex-grow: 0;
   border: 2px solid #000000;
@@ -855,11 +822,14 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 115% 115%;
+  cursor: pointer;
 }
 .contact-input-checkbox:checked + label::before {
   background-image: url(../img/contact/checkbox.svg);
+  transition: 0.5s;
 }
 .contact-button {
+  cursor: pointer;
   margin-top: 18px;
   display: block;
   width: 100%;
@@ -890,6 +860,9 @@ body {
 .contact-info-description {
   margin-left: 81px;
 }
+/*Contact STOP*/
+
+/*Vacations START*/
 .vacations {
   margin-top: 172px;
   background: url(../img/vacations/vacations-background.png);
@@ -979,6 +952,7 @@ body {
 
   color: #ffffff;
   font-stretch: 110;
+  cursor: pointer;
 }
 .vacation-apply-btn-arrow {
   margin-left: 15px;
@@ -987,7 +961,7 @@ body {
   color: lightgray;
 }
 .vacation-p {
-  width: 889px;
+  width: 61%;
   margin: 0 auto;
   margin-top: 127px;
   font-weight: 600;
@@ -1021,6 +995,9 @@ body {
   font-stretch: 125;
   text-align: center;
 }
+/*Vacations STOP*/
+
+/*Footer Start*/
 .footer {
   margin-top: 194px;
   position: relative;
@@ -1042,8 +1019,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-left: 96px;
-  margin-right: 110px;
+  margin: 0px 7%;
 }
 .footer-logo {
 }
@@ -1096,3 +1072,340 @@ body {
 .footer-copyright-arrows:nth-of-type(2n) {
   transform: scaleX(-1);
 }
+/*Footer STOP*/
+
+.hidden {
+  display: none;
+}
+
+/*Animations START*/
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes sphere {
+  0% {
+    background: url(../img/mission/sphere-1.png) 100% 0 no-repeat;
+  }
+  50% {
+    background: url(../img/mission/sphere-2.png) 100% 0 no-repeat;
+  }
+  100% {
+    background: url(../img/mission/sphere-3.png) 100% 0 no-repeat;
+  }
+}
+@keyframes right-close {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: -100%;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes left-init {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+@keyframes right-init {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+/*Animations STOP*/
+
+/*Media Requests START*/
+@media (max-width: 1920px) {
+  .mission-line {
+    top: -50px;
+  }
+  .areas-first-link {
+    width: 21%;
+    left: 15%;
+  }
+}
+@media (max-width: 1900px) {
+  .mission-line {
+    top: -40px;
+  }
+}
+@media (max-width: 1800px) {
+  .mission-line {
+    top: 0px;
+  }
+}
+@media (max-width: 1700px) {
+  .mission-line {
+    top: 50px;
+  }
+}
+@media (max-width: 1410px) {
+  .mission-line {
+    top: 5%;
+  }
+  .areas-first-link {
+    width: 18%;
+    left: 16%;
+  }
+}
+@media (max-width: 1330px) {
+  .mission-line {
+    top: 6%;
+  }
+  .areas-first-link {
+    width: 16%;
+    left: 18%;
+  }
+  .quote-mark {
+    font-size: 60px;
+  }
+  .vacations-flex__item {
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
+  .vacation-h3 {
+    font-size: 15px;
+  }
+  .vacation-requirements-li {
+    font-size: 15px;
+  }
+  .vacation-apply-btn {
+    margin-top: 25px;
+  }
+  .vacation-apply-btn-arrow {
+    width: 50%;
+  }
+}
+@media (max-width: 1220px) {
+  .mission-line {
+    top: 10%;
+  }
+  .areas-first-link {
+    width: 15%;
+    left: 18%;
+  }
+  .vacation-apply-btn {
+    margin-top: 15px;
+  }
+  .vacation-apply-btn-arrow {
+    width: 45%;
+  }
+}
+@media (max-width: 1140px) {
+  .header-description .text-p {
+    font-size: 15px;
+    padding: 7px;
+  }
+  .quote-p {
+    width: 90%;
+  }
+  .areas-first-link {
+    width: 13%;
+    top: 42px;
+    left: 19%;
+  }
+  .vacations-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .vacations-flex__item {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1040px) {
+  .text-h1 {
+    font-size: 50px;
+  }
+  .header-description .text-p {
+    font-size: 10px;
+  }
+  .mission-line {
+    top: 12%;
+  }
+  .mission-number {
+    font-size: 60px;
+  }
+  .areas-first-item .areas-p {
+    margin-top: 0;
+  }
+  .areas-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .areas-first-item {
+    margin: 0;
+  }
+  .areas-line img {
+    transform: rotate(90deg);
+    width: 10%;
+    height: 96px;
+  }
+  .areas-first-link {
+    display: none;
+  }
+  .areas-middle-link {
+    display: none;
+  }
+  .chain-line-item img {
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+  }
+  .hidden {
+    display: block;
+    margin: 0 auto;
+    transform: rotate(90deg);
+    width: 10%;
+    height: 96px;
+  }
+  .contact-wrapper {
+    margin-left: 0;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .contact-info {
+    margin: 0;
+  }
+  .footer-p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 940px) {
+  .header__menu_nav-item {
+    font-size: 40px;
+  }
+  .mission-line {
+    top: 16%;
+  }
+  .solutions__item_preview img {
+    width: 80%;
+  }
+  .footer-logo,
+  .footer-img {
+    width: 100px;
+  }
+  .footer-link {
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .header__menu_logo {
+    width: 40%;
+  }
+  .header__menu_nav-item {
+    font-size: 30px;
+  }
+  .header__menu_img {
+    width: 30%;
+  }
+  .header__menu_email {
+    font-size: 16px;
+  }
+  .header__portfolio-block {
+    width: 18%;
+  }
+  .header-p {
+    font-size: 15px;
+  }
+  .header__portfolio-link {
+    margin-top: 35px;
+  }
+  .contact-btn {
+    margin-left: 75vw;
+  }
+  .header__portfolio-link span {
+    font-size: 12px;
+  }
+  .header__portfolio-link img {
+    width: 50%;
+  }
+  .mission-line {
+    top: 19%;
+  }
+}
+@media (max-width: 700px) {
+  .mission-principles {
+    animation: none;
+  }
+  .mission-p {
+    font-size: 30px;
+  }
+  .mission-line {
+    width: 30%;
+    top: 15%;
+  }
+  .quote-p {
+    font-size: 17px;
+  }
+  .mission-number {
+    font-size: 40px;
+  }
+  .numbers-p {
+    font-size: 15px;
+  }
+  .areas-item {
+    width: 35%;
+  }
+  .vacation-email {
+    font-size: 30px;
+  }
+}
+@media (max-width: 630px) {
+  .mission-quote {
+    display: none;
+  }
+  .mission-numbers-wrapper {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .mission-line {
+    display: none;
+  }
+  .areas-first-item {
+    width: 50%;
+  }
+  .areas-h2 {
+    font-size: 20px;
+  }
+  .chain-h2,
+  .chain-a {
+    font-size: 10px;
+  }
+  .areas-item {
+    width: 50%;
+  }
+  .footer-logo,
+  .footer-img {
+    width: 10%;
+  }
+  .footer-links {
+    gap: 5px;
+  }
+  .footer-link {
+    font-size: 15px;
+  }
+}
+/*Media Requests STOP*/
