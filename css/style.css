@@ -9,6 +9,7 @@ p {
   padding: 0;
 }
 body {
+  min-width: 630px;
   overflow-x: hidden;
 }
 :root {
